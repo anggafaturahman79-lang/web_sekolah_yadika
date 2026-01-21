@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>SMK Yadika 4 Karang Tengah</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<!-- Materialize CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+body{
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg,#e0f7fa,#f1f8ff);
+}
+
+/* Navbar */
+.nav-glass{
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Hero */
+.hero{
+  height: 80vh;
+  background:
+    linear-gradient(rgba(0,105,92,.7),rgba(0,105,92,.7)),
+    url('https://images.unsplash.com/photo-1588072432836-e10032774350');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.hero h1{
+  font-weight: 700;
+}
+
+/* Section */
+.bg-soft{
+  background: rgba(255,255,255,.7);
+}
+
+/* Card */
+.info-card{
+  padding: 25px;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  transition: .3s;
+}
+.info-card img{
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.info-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+/* Timeline */
+.timeline{
+  border-left: 4px solid #26a69a;
+  padding-left: 20px;
+}
+.timeline-item{
+  margin-bottom: 20px;
+}
+.timeline-item span{
+  font-weight: bold;
+  color: #00796b;
+}
+
+/* Maps */
+.maps-frame{
+  width:100%;
+  height:250px;
+  border:none;
+  border-radius:12px;
+}
+
+/* Footer */
+footer{
+  padding:20px;
+  background: rgba(0,0,0,.05);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav-glass">
+  <div class="nav-wrapper container">
+    <a href="#" class="brand-logo">SMK Yadika 4</a>
+    <a href="#" data-target="mobile" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#sambutan">Sambutan</a></li>
+      <li><a href="#jurusan">Jurusan</a></li>
+      <li><a href="#pengumuman">Pengumuman</a></li>
+      <li><a href="#artikel">Artikel</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </div>
+</nav>
+
+<ul class="sidenav" id="mobile">
+  <li><a href="#sambutan">Sambutan</a></li>
+  <li><a href="#jurusan">Jurusan</a></li>
+  <li><a href="#pengumuman">Pengumuman</a></li>
+  <li><a href="#artikel">Artikel</a></li>
+  <li><a href="#kontak">Kontak</a></li>
+</ul>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>SMK Yadika 4 Karang Tengah</h1>
+    <p>Sekolah Menengah Kejuruan Unggul & Siap Kerja</p>
+  </div>
+</section>
+
+<!-- SAMBUTAN -->
+<!-- SAMBUTAN -->
+<section id="sambutan" class="section bg-soft">
+  <div class="container">
+    <h4 class="center">Kata Sambutan Kepala Sekolah</h4>
+
+    <div class="row">
+      <div class="col s12 m10 offset-m1">
+        <div class="card white z-depth-1">
+          <div class="card-content">
+
+            <p style="text-align: justify;">
+              Selamat datang di website resmi <strong>SMK Yadika 4 Karang Tengah</strong>.
+              Website ini kami sediakan sebagai media informasi dan komunikasi
+              bagi peserta didik, orang tua, dan masyarakat.
+            </p>
+
+            <p style="text-align: justify;">
+              Kami berkomitmen menyelenggarakan pendidikan kejuruan yang
+              berkualitas untuk membekali peserta didik dengan keterampilan,
+              karakter, dan kesiapan menghadapi dunia kerja.
+            </p>
+
+            <p style="text-align: justify;">
+              Semoga website ini dapat memberikan manfaat dan mendukung
+              terwujudnya pelayanan pendidikan yang lebih baik.
+            </p>
+
+            <p class="right-align" style="margin-top:20px;">
+              <strong>Kepala SMK Yadika 4 Karang Tengah</strong>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- JURUSAN -->
+<section id="jurusan" class="section bg-soft">
+  <div class="container">
+    <h4 class="center">Program Keahlian</h4>
+    <div class="row">
+
+      <div class="col s12 m4">
+        <div class="info-card">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="responsive-img">
+          <h6>Teknik Komputer dan Jaringan</h6>
+          <p>Fokus pada jaringan komputer, server, dan teknologi IT.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="info-card">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="responsive-img">
+          <h6>Manajemen Perkantoran dan Layanan Bisnis</h6>
+          <p>Administrasi perkantoran modern dan pelayanan bisnis.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m4">
+        <div class="info-card">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" class="responsive-img">
+          <h6>Akuntansi dan Keuangan Lembaga</h6>
+          <p>Akuntansi, pembukuan, dan pengelolaan keuangan.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PENGUMUMAN -->
+<section id="pengumuman" class="section container">
+  <h4 class="center">Pengumuman</h4>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>1 Juli 2026</span>
+      <p>Pendaftaran PPDB Tahun Ajaran Baru</p>
+    </div>
+    <div class="timeline-item">
+      <span>10 Juni 2026</span>
+      <p>Pengambilan Rapor Semester Genap</p>
+    </div>
+  </div>
+</section>
+
+<!-- ARTIKEL -->
+<section id="artikel" class="section bg-soft">
+  <div class="container">
+    <h4 class="center">Artikel Terbaru</h4>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Dunia Kerja di Era Digital</span>
+            <p>Pentingnya skill teknologi bagi lulusan SMK.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Budaya Disiplin di Sekolah</span>
+            <p>Membangun karakter unggul sejak dini.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="section container">
+  <div class="row">
+    <div class="col s12 m6">
+      <h5>Kontak Sekolah</h5>
+      <p><i class="material-icons">location_on</i> Karang Tengah, Tangerang</p>
+      <p><i class="material-icons">call</i> (021) xxxx-xxxx</p>
+      <p><i class="material-icons">email</i> smkyadika4@gmail.com</p>
+    </div>
+    <div class="col s12 m6">
+      <iframe
+        src="https://www.google.com/maps?q=karang%20tengah%20tangerang&output=embed"
+        class="maps-frame"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="center">
+  © 2026 SMK Yadika 4 Karang Tengah
+</footer>
+
+<!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  M.Sidenav.init(document.querySelectorAll('.sidenav'));
+});
+</script>
+
+</body>
+</html>
